@@ -30,3 +30,8 @@ class InsufficientFundsError(AppError):
 class InvalidStateError(AppError):
     status_code = 409
     detail = "Invalid state transition"
+
+
+class UnauthorizedError(AppError):
+    status_code = 401
+    detail = "Unauthorized"
